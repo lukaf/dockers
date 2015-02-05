@@ -6,5 +6,4 @@ openarena-run:
 
 openarena: openarena-run
 
-
-.PHONY: openarena openarena-build openarena-run
+.PHONY: openarena-bild openarena-run openarena
