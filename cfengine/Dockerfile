@@ -4,4 +4,6 @@ RUN yum -y install http://s3.amazonaws.com/cfengine.package-repos/community_bina
 
 EXPOSE 5308
 
-CMD cf-agent -B `grep -f /proc/sys/kernel/hostname /etc/hosts | awk '{print $1}'` && tail -f /var/cfengine/promise_summary.log
+ADD start.sh /scripts/start.sh
+
+ENTRYPOINT ["/scripts/start.sh"]
