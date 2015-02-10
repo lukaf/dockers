@@ -1,3 +1,3 @@
-#### cfengine-community-3.6.4
+#### cfengine-community-3.5.0
 
-Current size: 220.6 MB
+Current size: 210.7 MB
