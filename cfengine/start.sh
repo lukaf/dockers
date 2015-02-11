@@ -15,9 +15,9 @@ case "$1" in
     client)
         shift
         if [ -z "$1" ]; then
-            cf-agent -B hub
+            cf-agent -B hub && tail -f /var/cfengine/promise_summary.log
         else
-            cf-agent -B ${1}
+            cf-agent -B ${1} && tail -f /var/cfengine/promise_summary.log
         fi
         ;;
     *)
