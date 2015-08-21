@@ -1,4 +1,4 @@
-FROM lukaf/centos7:latest
+FROM centos:7
 
 RUN yum makecache fast && \
     yum -y install rpm-build git make gcc wget tar patch && \
